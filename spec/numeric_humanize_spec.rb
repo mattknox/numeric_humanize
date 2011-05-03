@@ -7,6 +7,7 @@ describe "Numeric#humanize" do
     (10 ** 9).humanize.should == "1 billion"
     (10 ** -9).humanize.should == "1 billionths"
     (10 ** -8).humanize.should == "10 billionths"
+    (10 ** -7).humanize.should == "100 billionths"
     9769160976976976.humanize.should == "9.77 * 10^15"
     9769160976976976.humanize(2).should == "9.8 * 10^15"
     9769160976976976.humanize(4).should == "9.769 * 10^15"
