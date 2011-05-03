@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "numeric_humanize"
   gem.homepage = "http://github.com/mattknox/numeric_humanize"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{ Numeric#humanize makes dealing with big numbers easier. }
+  gem.description = %Q{ (10**7).humanize => "10 billion"}
   gem.email = "matthewknox@gmail.com"
   gem.authors = ["matt knox"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
