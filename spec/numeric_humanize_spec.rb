@@ -15,4 +15,14 @@ describe "Numeric#humanize" do
     97691609769.humanize.should == "97.7 billion"
     9769160976.humanize.should == "9.77 billion"
   end
+
+  it "to_sci" do
+    (10 ** 7).to_sci.should == "1E+07"
+    (10 ** 8).to_sci.should == "1E+08"
+    (10 ** 11).to_sci.should == "1E+11"
+    (10 ** 15).to_sci.should == "1E+15"
+    (10 ** -7).to_sci.should == "1E-07"
+    9876543210.to_sci.should == "9.88E+09"
+    9876543210.to_sci(4).should == "9.877E+09"
+  end
 end

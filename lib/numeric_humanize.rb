@@ -15,4 +15,8 @@ class Numeric
     suffix = "#{suffix}ths" if scale < 1 && suffix
     sprintf("%.#{ figures }G", self.to_f / base) + suffix.to_s
   end
+
+  def to_sci(figures = 3)
+    sprintf("%.#{ figures }G", self)
+  end
 end
