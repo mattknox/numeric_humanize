@@ -6,7 +6,9 @@ class Numeric
               3  => " billion",
               4  => " trillion"
             })
-  # in my unscientific test, no one really found names beyond trillion useful.
+  # in my unscientific test, no one really found names beyond trillion
+  # useful.  Default to sci notation seems useful.
+
 
   def humanize(figures = 3)
     scale = (Math.log10(self) / 3).floor
